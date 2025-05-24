@@ -3743,3 +3743,7 @@ body.darkmode ul.iconGroup li {
   margin-top: 12px;
   white-space: normal;
 }
+.page-title{
+  font-weight: 500;
+  font-size: 24px;
+}
