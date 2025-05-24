@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="softwarezon">
+    <meta name="keywords" content="softwarezon admin, softwarezon, softwarezon.com, softwarezon codecayon">
+    <meta name="csrf-token" content="IXYO9Lh7MCSQyiqODAJI8ae6TISe5MvMq5glXbuB">
+    <title>Dashboard | Softwarezon CMS</title>
+    <link rel="shortcut icon" href="images/logo/favicon.png?1748060517" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet">
+    <link href="backend/css/fontawesome.min.css" rel="stylesheet">
+    <link href="backend/css/themify-icons.css" rel="stylesheet">
+    <link href="backend/css/simplebar.min.css" rel="stylesheet">
+    <link rel="stylesheet" href='backend/css/bootstrap.min.css'>
+    <style>
+        :root {
+            --main-font-size: "17px";
+            --main-font-name: "Rubik", sans-serif;
+            --main-color: #262626;
+            --main-background-color: #f4f6fb;
+        }
+    </style>
+    <link href="backend/css/style.css" rel="stylesheet">
+</head>
+
+<body class="">
+    <!-- Loader Start-->
+    <div class="backend-loader">
+        <div class="loader-item one"></div>
+        <div class="loader-item two"></div>
+        <div class="loader-item three"> </div>
+    </div>
+    <!-- Loader End-->
+<!-- new code here -->
+    <!-- Header Start-->
+    <header class="backend-header">
+        <div class="custom-container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header-contain">
+                        <div class="header-left">
+                            <div class="logo-gridwrap">
+                                <a class="backendbrand-logo" href="dashboard">
+                                    <img class="img-fluid" src="images/logo/logo.png?1748060517" alt="theme-logo">
+                                </a>
+                                <a class="backenddark-logo" href="dashboard">
+                                    <img class="img-fluid" src="images/logo/logo.png?1748060517" alt="theme-logo">
+                                </a>
+                            </div>
+                            <div class="sidebar-action" role="button"><i class="fas fa-bars"></i></div>
+                            <div class="search-bar">
+                                <div class="form-group menu-search-init mb-0">
+                                    <div class="input-group">
+                                        <input class="form-control" type="search" name="menu_search" id="menu_search"
+                                            placeholder="Search Menu">
+                                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                                    </div>
+                                    <div class="menu-search-scope">
+                                        <ul class="list-group menu-search-results"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-right">
+                            <ul class="nav-iconlist">
+                                <li>
+                                    <a class="action-toggle viewAction" href="javascript:void(0)">
+                                        <i class="fas fa-sun icon-dark" style="display:none;"></i>
+                                        <i class="far fa-moon icon-light" style="display:none;"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="action-toggle" href="javascript:void(0)">
+                                        <i class="far fa-bell"></i>
+                                        <div class="noti-count">04</div>
+                                    </a>
+                                    <div class="hover-dropdown navnotification-drop">
+                                        <ul data-simplebar>
+                                            <li>
+                                                <a href="javascript:void(0);">
+                                                    <div class="media">
+                                                        <div class="icon-nav bg-primary"><i
+                                                                class="fas fa-check-square"></i></div>
+                                                        <div class="media-body">
+                                                            <h6>order Cheked</h6><span class="text-light">1 hour
+                                                                ago</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="drop-footer">
+                                            <a href="#">See All Notification<i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="action-toggle p-1" href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="user-icon">
+                                                <img class="img-fluid" src="images/flags/646353cbf041a.png" alt="logo">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="hover-dropdown navprofile-drop">
+                                        <ul>
+                                            <li>
+                                                <a href="backend/setting/language-switch/en">
+                                                    <img class="me-1" src="images/flags/646353cbf041a.png">
+                                                    English
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="backend/setting/language-switch/ar">
+                                                    <img class="me-1" src="images/flags/646353d39ef3e.png">
+                                                    Arabic
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="backend/setting/language-switch/bn">
+                                                    <img class="me-1" src="images/flags/651cf34b8dc85.png">
+                                                    Bengali
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li><a class="action-toggle btn-windowfull" href="javascript:void(0)"><i
+                                            class="fas fa-arrows-alt" aria-hidden="true"></i></a></li>
+
+                                <li class="nav-profile">
+                                    <a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="user-icon">
+                                                <img class="img-fluid rounded-50" src="backend/images/avtar/admin.png"
+                                                    alt="logo">
+                                            </div>
+
+                                        </div>
+                                    </a>
+                                    <div class="hover-dropdown navprofile-drop">
+                                        <ul>
+                                            <li><a href="edit-profile"><i data-feather="user"></i> Edit Profile</a></li>
+                                            <li><a href="edit-password"><i data-feather="lock"></i> Update Password</a>
+                                            </li>
+                                            <li><a href="manage-2fa"><i data-feather="key"></i> Manage 2FA</a></li>
+                                            <li> <a href="logout"
+                                                    onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i
+                                                        data-feather="log-out"></i> Log out</a></li>
+                                            <form id="logout-form" action="logout" method="POST" class="d-none"><input
+                                                    type="hidden" name="_token"
+                                                    value="IXYO9Lh7MCSQyiqODAJI8ae6TISe5MvMq5glXbuB" autocomplete="off">
+                                            </form>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- sidebar start-->
+    <div class="backend-sidebar">
+        <div class="logo-gridwrap">
+            <a class="backendbrand-logo" href="dashboard">
+                <img class="img-fluid" src="images/logo/logo.png?1748060517" alt="theme-logo">
+            </a>
+            <a class="backend-darklogo" href="dashboard">
+                <img class="img-fluid" src="images/logo/logo.png?1748060517" alt="theme-logo">
+            </a>
+            <a class="sidebar-action" href="javascript:void(0);">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+        <div class="backend-menuwrapper">
+            <ul class="backend-menu custom-scroll scroll-whtie" data-simplebar data-simplebar-direction="ltr"
+                id="backend-menu">
+                <li class="bkendmenu-title">
+                    <h5>Dashboard</h5>
+                </li>
+                <li class="menu-item searchable">
+                    <a href="dashboard">
+                        <div class="icon-item"><i data-feather="home"></i></div>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+
+                <li class="bkendmenu-title">
+                    <h5>Plan Setting</h5>
+                </li>
+                <li class="menu-item searchable">
+                    <a href="backend/plan-create">
+                        <div class="icon-item"><i data-feather="plus"></i></div>
+                        <span>Create Plan</span>
+                    </a>
+                </li>
+
+                <li class="menu-item searchable">
+                    <a href="backend/plan-all">
+                        <div class="icon-item"><i data-feather="columns"></i></div>
+                        <span>Plan List</span>
+                    </a>
+                </li>
+
+                <li class="bkendmenu-title">
+                    <h5>Payment Setting</h5>
+                </li>
+                <li class="menu-item searchable">
+                    <a href="paymentszon">
+                        <div class="icon-item"><i data-feather="credit-card"></i></div>
+                        <span>Payment Method</span>
+                    </a>
+                </li>
+
+
+                <li class="bkendmenu-title">
+                    <h5>Manage Users</h5>
+                </li>
+                <li class="menu-item">
+                    <a href="javascript:void(0);">
+                        <div class="icon-item"><i data-feather="users"></i></div>
+                        <span>Manage User</span>
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="submenu-list">
+                        <li class="searchable">
+                            <a href="backend/users/create">
+                                <div class="icon-item"><i data-feather="user-plus"></i></div>
+                                Create User
+                            </a>
+                        </li>
+                        <li class="searchable">
+                            <a href="backend/users">
+                                <div class="icon-item"><i data-feather="users"></i></div>
+                                User List
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="bkendmenu-title">
+                    <h5>Basic Setting</h5>
+                </li>
+                <li class="menu-item">
+                    <a href="backend/setting/basic-setting">
+                        <div class="icon-item"><i data-feather="settings"></i></div>
+                        <span>Basic Setting</span>
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="backend/setting/logo-favicon">
+                        <div class="icon-item"><i data-feather="image"></i></div>
+                        <span>Logo & Favicon</span>
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="backend/setting/manage-language">
+                        <div class="icon-item"><i data-feather="globe"></i></div>
+                        <span>Manage Language</span>
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="backend/setting/system-information">
+                        <div class="icon-item"><i data-feather="cpu"></i></div>
+                        <span>System Information</span>
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="javascript:void(0);">
+                        <div class="icon-item"><i data-feather="slack"></i></div>
+                        <span>Role & Permission</span><i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="submenu-list">
+                        <li>
+                            <a href="backend/setting/roles">
+                                <i data-feather="award"></i>Manage Role </a>
+                        </li>
+                        <li>
+                            <a href="backend/setting/permissions"><i data-feather="command"></i>Manage Permission</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <a href="backend/setting/plugin-setting">
+                        <div class="icon-item"><i data-feather="tool"></i></div>
+                        <span>Plugin Setting</span>
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="backend/setting/seo-setting">
+                        <div class="icon-item"><i data-feather="chrome"></i></div>
+                        <span>SEO Setting</span>
+                    </a>
+                </li>
+
+
+                <li class="bkendmenu-title">
+                    <h5>Notification Setting</h5>
+                </li>
+                <li class="menu-item">
+                    <a href="emailszon">
+                        <div class="icon-item"><i data-feather="mail"></i></div>
+                        <span>Email Configuration</span>
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="smszon">
+                        <div class="icon-item"><i data-feather="smartphone"></i></div>
+                        <span>SMS Configuration</span>
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="backend/setting/notification/telegram">
+                        <div class="icon-item"><i data-feather="send"></i></div>
+                        <span>Telegram Configuration</span>
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="backend/setting/notification-format">
+                        <div class="icon-item"><i data-feather="bell"></i></div>
+                        <span>Notification Format</span>
+                    </a>
+                </li>
+
+
+                <li class="bkendmenu-title">
+                    <h5>Web Setting</h5>
+                </li>
+
+                <li class="menu-item">
+                    <a href="javascript:void(0);">
+                        <div class="icon-item"><i data-feather="layout"></i></div>
+                        <span>Manage Pages</span>
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="submenu-list">
+                        <li>
+                            <a href="backend/web-setting/manage-pages/terms-condition">
+                                <i data-feather="circle"></i>Terms & Condition </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <a href="javascript:void(0);">
+                        <div class="icon-item"><i data-feather="users"></i></div>
+                        <span>Manage Section</span>
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="submenu-list">
+                        <li class="searchable">
+                            <a href="backend/setting/frontend-sections/how-it-work">
+                                <div class="icon-item"><i data-feather="user-plus"></i></div>
+                                How work Section
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="bkendmenu-title">
+                    <h5>General Settings</h5>
+                </li>
+                <li class="menu-item">
+                    <a href="edit-profile">
+                        <div class="icon-item"><i data-feather="edit"></i></div>
+                        <span>Profile Information</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="edit-password">
+                        <div class="icon-item"><i data-feather="key"></i></div>
+                        <span>Update Password</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="manage-2fa">
+                        <div class="icon-item"><i data-feather="key"></i></div>
+                        <span>Manage 2FA</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="logout" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                        <div class="icon-item"><i data-feather="log-out"></i></div>
+                        <span>Log out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- sidebar end-->
+
+    <!-- Header End-->
+    <div class="themebody-wrap">
+        <!-- breadcrumb start-->
+        <div class="backend-breadcrumb">
+            <div class="custom-container">
+                <div class="breadcrumb-contain">
+                    <div class="left-breadcrumb">
+                        <ul class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="dashboard">
+                                    <h1>Dashboard</h1>
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0);">Dashboard</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-breadcrumb">
+                        <a href="dashboard" class="btn btn-primary"><i class="fa fa-arrow-left"></i> back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb end-->
+        <div class="theme-body">
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>new code here form </p>
+               <div class="card card-primary">
+                            <div class="card-header">
+                                <h5>
+                                    <i class="fas fa-server"></i>
+                                    System Information
+                                </h5>
+                                <div class="card-tools">
+                                    <a role="button" data-action="collapse" class="me-2"><i
+                                            class="fas fa-minus"></i></a>
+                                    <a role="button" data-action="close" class="ms-2"><i class="fas fa-times"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-content collapse show">
+                                <div class="card-body">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4>Server Information</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <table class="table table-bordered table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Title</th>
+                                                        <th>Information</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>PHP VERSION</td>
+                                                        <td>8.2.27</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>TIMEZONE</td>
+                                                        <td>Europe/Rome</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>REMOTE ADDR</td>
+                                                        <td>127.0.0.1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>REMOTE PORT</td>
+                                                        <td>51694</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>SERVER ADDR</td>
+                                                        <td>127.0.0.1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>SERVER PORT</td>
+                                                        <td>80</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>SERVER NAME</td>
+                                                        <td>!valet!</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>SERVER SOFTWARE</td>
+                                                        <td>nginx/1.27.3</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4>System Information</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <table class="table table-bordered table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Title</th>
+                                                        <th>Information</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Laravel Version</td>
+                                                        <td>10.39.0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Laravel UI Version</td>
+                                                        <td>v3.4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Spatie Laravel Permission</td>
+                                                        <td>v5.5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Laravel-Mix</td>
+                                                        <td>v6.0.6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lodash</td>
+                                                        <td>v4.17.19</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vue Js</td>
+                                                        <td>v2.6.12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vue Loader</td>
+                                                        <td>v15.9.8</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vue-Template-Compiler</td>
+                                                        <td>v2.6.12</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer start-->
+    <footer class="backend-footer">
+        <p>&copy; Copyright 2025 Softwarezon. All rights reserved.</p>
+    </footer>
+    <!-- footer end-->
+
+    <script src="backend/js/jquery-3.6.0.js"></script>
+    <script src="backend/js/feather.js"></script>
+    <script src="backend/js/bootstrap.bundle.min.js"></script>
+    <script src="backend/js/customizer.js"></script>
+    <script src="backend/js/simplebar.js"></script>
+    <script src="vendor/sweetalert/sweetalert.all.js"></script>
+    <script src="backend/js/custom-script.js"></script>
+</body>
+
+</html>
