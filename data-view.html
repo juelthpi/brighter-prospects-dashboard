@@ -21,6 +21,12 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
       rel="stylesheet"
     />
+    <!-- DataTables CSS -->
+    <link
+      href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.css"
+      rel="stylesheet"
+    />
+
     <link href="backend/css/fontawesome.min.css" rel="stylesheet" />
     <link href="backend/css/themify-icons.css" rel="stylesheet" />
     <link href="backend/css/simplebar.min.css" rel="stylesheet" />
@@ -498,7 +504,7 @@
                   </a>
                 </li>
                 <li class="breadcrumb-item active">
-                  <a href="javascript:void(0);">New Application</a>
+                  <a href="javascript:void(0);">Data View</a>
                 </li>
               </ul>
             </div>
@@ -515,480 +521,214 @@
         <div class="custom-container">
           <div class="row">
             <div class="col-md-12">
-              <h4 class="page-title text-black mb-3">New Application</h4>
-              <div class="card card-secondary">
-                <div class="progressbar-container">
-                  <div class="progress-step done">
-                    <span class="step-number"
-                      ><i class="fa-solid fa-check"></i> <b>1</b></span
-                    >
-                    <div class="step-label">Biographical<br />Information</div>
-                  </div>
-                  <div class="progress-step active">
-                    <span class="step-number"
-                      ><i class="fa-solid fa-check"></i> <b>2</b></span
-                    >
-                    <div class="step-label">Education Background</div>
-                  </div>
-                  <div class="progress-step">
-                    <span class="step-number"
-                      ><i class="fa-solid fa-check"></i> <b>3</b></span
-                    >
-                    <div class="step-label">Scholarship Details</div>
-                  </div>
-                  <div class="progress-step">
-                    <span class="step-number"
-                      ><i class="fa-solid fa-check"></i> <b>4</b></span
-                    >
-                    <div class="step-label">Reference</div>
-                  </div>
-                  <div class="progress-step">
-                    <span class="step-number"
-                      ><i class="fa-solid fa-check"></i> <b>5</b></span
-                    >
-                    <div class="step-label">Bank Details</div>
-                  </div>
-                  <div class="progress-step">
-                    <span class="step-number"
-                      ><i class="fa-solid fa-check"></i> <b>6</b></span
-                    >
-                    <div class="step-label">Document Checklist</div>
-                  </div>
-                  <div class="progress-step">
-                    <span class="step-number"
-                      ><i class="fa-solid fa-check"></i> <b>7</b></span
-                    >
-                    <div class="step-label">Special Consideration</div>
-                  </div>
-                  <div class="progress-step">
-                    <span class="step-number"
-                      ><i class="fa-solid fa-check"></i> <b> 8</b></span
-                    >
-                    <div class="step-label">Community Involvement</div>
-                  </div>
-                </div>
-                <div class="card-header border-0">
-                  <h5>Biographical Information</h5>
-                  <div class="card-tools">
-                    <a role="button" data-action="collapse" class="me-2"
-                      ><i class="fas fa-minus"></i
-                    ></a>
-                    <a role="button" data-action="close" class="ms-2"
-                      ><i class="fas fa-times"></i
-                    ></a>
-                  </div>
-                </div>
-                <div class="card-content collapse show">
-                  <div class="card-body">
-                    <form
-                      action="backend/users"
-                      role="form"
-                      method="post"
-                      enctype=""
-                    >
-                      <input
-                        type="hidden"
-                        name="_token"
-                        value="IXYO9Lh7MCSQyiqODAJI8ae6TISe5MvMq5glXbuB"
-                        autocomplete="off"
-                      />
-
-                      <div class="row">
-                        <div class="form-group col-md-6">
-                          <label class="form-label" for="name"
-                            >First Name
-                          </label>
-                          <input
-                            id="name"
-                            name="name"
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Search here"
-                          />
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label class="form-label" for="Last_name"
-                            >Last Name
-                          </label>
-                          <input
-                            id="Last_name"
-                            name="name"
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Search here"
-                          />
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label class="form-label" for="email">Email </label>
-                          <input
-                            id="email"
-                            name="email"
-                            value=""
-                            type="email"
-                            class="form-control"
-                            required=""
-                            placeholder="Search here"
-                          />
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label class="form-label" for="Nationality"
-                            >Nationality
-                          </label>
-                          <select
-                            class="form-select"
-                            aria-label="Default select example"
-                          >
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for="Date"
-                            >Date Of Birth
-                          </label>
-                          <input
-                            id="Date"
-                            name="Date"
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Search here"
-                          />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for="Gender">Gender </label>
-                          <select
-                            class="form-select"
-                            aria-label="Default select example"
-                          >
-                            <option value="1">Male</option>
-                            <option value="2">Female</option>
-                            <option value="3">Other</option>
-                          </select>
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for="Marital"
-                            >Marital Status
-                          </label>
-                          <select
-                            class="form-select"
-                            aria-label="Default select example"
-                          >
-                            <option value="1">Single</option>
-                            <option value="2">Marital</option>
-                          </select>
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label class="form-label" for="District"
-                            >District/Town/Village
-                          </label>
-                          <input
-                            id="District"
-                            name="District"
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Select"
-                          />
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label class="form-label" for="Address"
-                            >Permanent Address
-                          </label>
-                          <input
-                            id="Address"
-                            name="Address"
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Select"
-                          />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for="Telephone_office"
-                            >Telephone (Office)
-                          </label>
-                          <input
-                            id="Telephone_office"
-                            name="Address"
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Input here"
-                          />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for="Telephone_home"
-                            >Telephone (Home)
-                          </label>
-                          <input
-                            id="Telephone_home"
-                            name="Address"
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Input here"
-                          />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for="Telephone_mobile"
-                            >Telephone (Mobile)
-                          </label>
-                          <input
-                            id="Telephone_mobile"
-                            name="Address"
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Input here"
-                          />
-                        </div>
-                      </div>
-                      <div class="card-header border-0 ps-0">
-                        <h5>Employment & Family Information</h5>
-                        <div class="card-tools">
-                          <a role="button" data-action="collapse" class="me-2"
-                            ><i class="fas fa-minus"></i
-                          ></a>
-                          <a role="button" data-action="close" class="ms-2"
-                            ><i class="fas fa-times"></i
-                          ></a>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="form-group col-md-12">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            <label class="form-label" for="flexCheckDefault">
-                              Default checkbox
-                            </label>
-                          </div>
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label class="form-label" for="frequency"
-                            >Frequency
-                          </label>
-                          <input
-                            id="frequency"
-                            name="frequency"
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Search here"
-                          />
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label class="form-label" for="estimate_household"
-                            >Estimate Household Income (SST)
-                          </label>
-                          <input
-                            id="estimate_household"
-                            name=""
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Search here"
-                          />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for="mother_name"
-                            >Mother’s Name
-                          </label>
-                          <input
-                            id="mother_name"
-                            name=""
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Search here"
-                          />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for="mother_position"
-                            >Mother’s Position
-                          </label>
-                          <input
-                            id="mother_position"
-                            name=""
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Search here"
-                          />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for="mother_emp"
-                            >Mother’s Employer
-                          </label>
-                          <input
-                            id="mother_emp"
-                            name=""
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Search here"
-                          />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for="father_name"
-                            >Father’s Name
-                          </label>
-                          <input
-                            id="father_name"
-                            name=""
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Search here"
-                          />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for="father_position"
-                            >Father’s Position
-                          </label>
-                          <input
-                            id="father_position"
-                            name=""
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Search here"
-                          />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for="father_emp"
-                            >Father’s Employer
-                          </label>
-                          <input
-                            id="father_emp"
-                            name=""
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Search here"
-                          />
-                        </div>
-                      </div>
-                      <div class="card-header border-0 ps-0">
-                        <h5>Work Experience (IF Applicable)</h5>
-                        <div class="card-tools">
-                          <a role="button" data-action="collapse" class="me-2"
-                            ><i class="fas fa-minus"></i
-                          ></a>
-                          <a role="button" data-action="close" class="ms-2"
-                            ><i class="fas fa-times"></i
-                          ></a>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for="Company"
-                            >Company
-                          </label>
-                          <input
-                            id="Company"
-                            name=""
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Input here"
-                          />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for="position-hold"
-                            >Position Hold
-                          </label>
-                          <input
-                            id="position-hold"
-                            name=""
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Input here"
-                          />
-                        </div>
-                        <div class="form-group col-md-2">
-                          <label class="form-label" for="from"> From </label>
-                          <input
-                            id="from"
-                            name=""
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Input here"
-                          />
-                        </div>
-                        <div class="form-group col-md-2">
-                          <label class="form-label" for="to"> To </label>
-                          <input
-                            id="to"
-                            name=""
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Input here"
-                          />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for="file"
-                            >Upload Document (Only PNG Accepted And Size 30x32)
-                          </label>
-                          <input
-                            class="form-control"
-                            type="file"
-                            accept="image/png"
-                            id=""
-                          />
-                        </div>
-                      </div>
-                      <div
-                        class="d-flex align-items-center g-10 mt-3 justify-content-end"
+              <table class="data-show-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th class="text-center">Student Code</th>
+                    <th class="text-center">Application Code</th>
+                    <th class="text-center">First Name</th>
+                    <th class="text-center">Last Name</th>
+                    <th class="text-center">Email</th>
+                    <th class="text-center">Status</th>
+                    <th class="text-center">Date</th>
+                    <th class="text-center">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center">1973-1813</td>
+                    <td class="text-center">1973-1813-2388</td>
+                    <td class="text-center">Xandra</td>
+                    <td class="text-center">Cross</td>
+                    <td class="text-center">Test@gmail.com</td>
+                    <td class="text-center">
+                      <span class="badge-success rounded-3">Successful</span>
+                    </td>
+                    <td class="text-center">2025 / 05 / 24</td>
+                    <td class="text-center">
+                      <a href="#" class="btn btn-success btn-sm"
+                        >View Details</a
                       >
-                        <button
-                          type="submit"
-                          class="btn font-weight-bold btn-primary"
-                        >
-                          Save
-                        </button>
-                        <a
-                          href="education-background.html"
-                          class="btn font-weight-bold btn-primary"
-                          >Save & Proceed Next</a
-                        >
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">1973-1813</td>
+                    <td class="text-center">1973-1813-2388</td>
+                    <td class="text-center">Xandra</td>
+                    <td class="text-center">Cross</td>
+                    <td class="text-center">Test@gmail.com</td>
+                    <td class="text-center">
+                      <span class="badge-danger rounded-3">Pending</span>
+                    </td>
+                    <td class="text-center">2025 / 05 / 24</td>
+                    <td class="text-center">
+                      <a href="#" class="btn btn-success btn-sm"
+                        >View Details</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">1973-1813</td>
+                    <td class="text-center">1973-1813-2388</td>
+                    <td class="text-center">Xandra</td>
+                    <td class="text-center">Cross</td>
+                    <td class="text-center">Test@gmail.com</td>
+                    <td class="text-center">
+                      <span class="badge-danger rounded-3">Draft</span>
+                    </td>
+                    <td class="text-center">2025 / 05 / 24</td>
+                    <td class="text-center">
+                      <a href="#" class="btn btn-success btn-sm"
+                        >View Details</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">1973-1813</td>
+                    <td class="text-center">1973-1813-2388</td>
+                    <td class="text-center">Xandra</td>
+                    <td class="text-center">Cross</td>
+                    <td class="text-center">Test@gmail.com</td>
+                    <td class="text-center">
+                      <span class="badge-success rounded-3">Successful</span>
+                    </td>
+                    <td class="text-center">2025 / 05 / 24</td>
+                    <td class="text-center">
+                      <a href="#" class="btn btn-success btn-sm"
+                        >View Details</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">1973-1813</td>
+                    <td class="text-center">1973-1813-2388</td>
+                    <td class="text-center">Xandra</td>
+                    <td class="text-center">Cross</td>
+                    <td class="text-center">Test@gmail.com</td>
+                    <td class="text-center">
+                      <span class="badge-danger rounded-3">Pending</span>
+                    </td>
+                    <td class="text-center">2025 / 05 / 24</td>
+                    <td class="text-center">
+                      <a href="#" class="btn btn-success btn-sm"
+                        >View Details</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">1973-1813</td>
+                    <td class="text-center">1973-1813-2388</td>
+                    <td class="text-center">Xandra</td>
+                    <td class="text-center">Cross</td>
+                    <td class="text-center">Test@gmail.com</td>
+                    <td class="text-center">
+                      <span class="badge-danger rounded-3">Draft</span>
+                    </td>
+                    <td class="text-center">2025 / 05 / 24</td>
+                    <td class="text-center">
+                      <a href="#" class="btn btn-success btn-sm"
+                        >View Details</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">1973-1813</td>
+                    <td class="text-center">1973-1813-2388</td>
+                    <td class="text-center">Xandra</td>
+                    <td class="text-center">Cross</td>
+                    <td class="text-center">Test@gmail.com</td>
+                    <td class="text-center">
+                      <span class="badge-success rounded-3">Successful</span>
+                    </td>
+                    <td class="text-center">2025 / 05 / 24</td>
+                    <td class="text-center">
+                      <a href="#" class="btn btn-success btn-sm"
+                        >View Details</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">1973-1813</td>
+                    <td class="text-center">1973-1813-2388</td>
+                    <td class="text-center">Xandra</td>
+                    <td class="text-center">Cross</td>
+                    <td class="text-center">Test@gmail.com</td>
+                    <td class="text-center">
+                      <span class="badge-danger rounded-3">Pending</span>
+                    </td>
+                    <td class="text-center">2025 / 05 / 24</td>
+                    <td class="text-center">
+                      <a href="#" class="btn btn-success btn-sm"
+                        >View Details</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">1973-1813</td>
+                    <td class="text-center">1973-1813-2388</td>
+                    <td class="text-center">Xandra</td>
+                    <td class="text-center">Cross</td>
+                    <td class="text-center">Test@gmail.com</td>
+                    <td class="text-center">
+                      <span class="badge-danger rounded-3">Draft</span>
+                    </td>
+                    <td class="text-center">2025 / 05 / 24</td>
+                    <td class="text-center">
+                      <a href="#" class="btn btn-success btn-sm"
+                        >View Details</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">1973-1813</td>
+                    <td class="text-center">1973-1813-2388</td>
+                    <td class="text-center">Xandra</td>
+                    <td class="text-center">Cross</td>
+                    <td class="text-center">Test@gmail.com</td>
+                    <td class="text-center">
+                      <span class="badge-success rounded-3">Successful</span>
+                    </td>
+                    <td class="text-center">2025 / 05 / 24</td>
+                    <td class="text-center">
+                      <a href="#" class="btn btn-success btn-sm"
+                        >View Details</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">1973-1813</td>
+                    <td class="text-center">1973-1813-2388</td>
+                    <td class="text-center">Xandra</td>
+                    <td class="text-center">Cross</td>
+                    <td class="text-center">Test@gmail.com</td>
+                    <td class="text-center">
+                      <span class="badge-danger rounded-3">Pending</span>
+                    </td>
+                    <td class="text-center">2025 / 05 / 24</td>
+                    <td class="text-center">
+                      <a href="#" class="btn btn-success btn-sm"
+                        >View Details</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">1973-1813</td>
+                    <td class="text-center">1973-1813-2388</td>
+                    <td class="text-center">Xandra</td>
+                    <td class="text-center">Cross</td>
+                    <td class="text-center">Test@gmail.com</td>
+                    <td class="text-center">
+                      <span class="badge-danger rounded-3">Draft</span>
+                    </td>
+                    <td class="text-center">2025 / 05 / 24</td>
+                    <td class="text-center">
+                      <a href="#" class="btn btn-success btn-sm"
+                        >View Details</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -1002,11 +742,26 @@
     <!-- footer end-->
 
     <script src="backend/js/jquery-3.6.0.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
     <script src="backend/js/feather.js"></script>
     <script src="backend/js/bootstrap.bundle.min.js"></script>
     <script src="backend/js/customizer.js"></script>
     <script src="backend/js/simplebar.js"></script>
     <script src="vendor/sweetalert/sweetalert.all.js"></script>
     <script src="backend/js/custom-script.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        if ($(".data-show-table").length) {
+          $(".data-show-table").DataTable({
+            responsive: true,
+            searching: true,
+            ordering: true,
+            info: true,
+            paging: true,
+          });
+        }
+      });
+    </script>
   </body>
 </html>
