@@ -3049,6 +3049,14 @@ body.deactive-sidebar .backend-footer {
   }
 }
 @media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px) {
+  .data-view-line{
+    display: none;
+  }
+  .data-view-card{
+    flex-direction: column;
+  }
+}
 }
 @media screen and (max-width: 390px) {
   /*header*/
@@ -3793,3 +3801,92 @@ body.darkmode ul.iconGroup li {
 .page-link{
   color: #004F00;
 }
+
+.data-view-card {
+      background: #8FC2591A;
+      border-radius:5px;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+      font-size: 16px;
+    }
+
+    .data-view-card i {
+      font-size:18px;
+      color: #000;
+    }
+
+    .data-view-label {
+      color: #000;
+      display: flex;
+      font-size: 17px;
+      align-items: center;
+    }
+
+    .data-view-line {
+      flex: 1;
+      height: 1px;
+      background-color: #000;
+      margin: 0 8px;
+    }
+
+    .data-view-value {
+      font-weight: 500;
+      font-size: 24px;
+      color: #000;
+    }
+    .sm-badge{
+      font-size: 16px;
+      line-height: 20.78px;
+      padding: 5px 13px;
+      border-radius: 15px;
+    }
+    .sm-badge-success{
+      background:#8FC25966;
+      color:#007F00;
+    }
+    .sm-badge-reject{
+      background:#F7BEBE66;
+      color:#FF6600;
+    }
+    .table thead th {
+      background-color:#F0F0F2;
+      border-bottom: none;
+      padding: 15px 20px;
+      font-weight: 500;
+ 
+    }
+    .table thead tr th:first-child{
+      border-radius:10px 0px 0px 10px;
+    }
+    .table thead tr th:last-child{
+      border-radius:0px 10px 10px 0px;
+    }
+    .table tr th,.table tr td{
+      color: #000000;
+      font-size:18px;
+     
+    }
+    .table tr td{
+    padding: 15px 20px;
+    border-color: #E1E1E1;
+    }
+    .table tr:last-child td{
+      border: none;
+    }
+    .table tbody tr {
+      vertical-align: middle;
+    }
+    .view-link {
+      color: #FF6600;
+      font-weight: 400;
+      cursor: pointer;
+      font-size:18px;
+      text-decoration: none;
+    }
+    .view-link:hover {
+      color: #004F00;
+      text-decoration: underline;
+    }
