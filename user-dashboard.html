@@ -232,7 +232,7 @@
           data-simplebar-direction="ltr"
           id="backend-menu"
         >
-          <li class="menu-item searchable">
+          <li class="menu-item searchable active">
             <a href="dashboard">
               <div class="icon-item">
                 <svg
@@ -358,10 +358,10 @@
             </a>
           </li>
 
-          <li class="menu-item searchable active">
+          <li class="menu-item searchable">
             <a href="#">
               <div class="icon-item">
-                <!-- <svg
+                <svg
                   width="22"
                   height="22"
                   viewBox="0 0 22 22"
@@ -384,8 +384,7 @@
                       d="M14.208 5.958v-.916a3.208 3.208 0 1 0-6.417 0v.916a3.208 3.208 0 1 0 6.417 0Z"
                     />
                   </g>
-                </svg> -->
-                <i class="fa-solid fa-images"></i>
+                </svg>
               </div>
               <span>New Application</span>
             </a>
@@ -487,363 +486,114 @@
 
     <!-- Header End-->
     <div class="themebody-wrap">
-      <!-- breadcrumb start-->
-      <div class="backend-breadcrumb">
-        <div class="custom-container">
-          <div class="breadcrumb-contain">
-            <div class="left-breadcrumb">
-              <ul class="breadcrumb mb-0">
-                <li class="breadcrumb-item">
-                  <a href="dashboard">
-                    <h1>Dashboard</h1>
-                  </a>
-                </li>
-                <li class="breadcrumb-item active">
-                  <a href="javascript:void(0);">Scholarship</a>
-                </li>
-              </ul>
-            </div>
-            <div class="right-breadcrumb">
-              <a href="dashboard" class="btn btn-primary"
-                ><i class="fa fa-arrow-left"></i> back</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- breadcrumb end-->
       <div class="theme-body">
         <div class="custom-container">
           <div class="row">
+            <!-- start welcome banner  -->
             <div class="col-md-12">
-              <h4 class="page-title text-black mb-3">Scholarship Details</h4>
-              <div class="card card-secondary">
-                <div class="progressbar-container">
-                  <div class="progress-step done">
-                    <span class="step-number"
-                      ><i class="fa-solid fa-check"></i> <b>1</b></span
-                    >
-                    <div class="step-label">Biographical<br />Information</div>
-                  </div>
-                  <div class="progress-step done">
-                    <span class="step-number"
-                      ><i class="fa-solid fa-check"></i> <b>2</b></span
-                    >
-                    <div class="step-label">Education Background</div>
-                  </div>
-                  <div class="progress-step active">
-                    <span class="step-number"
-                      ><i class="fa-solid fa-check"></i> <b>3</b></span
-                    >
-                    <div class="step-label">Scholarship Details</div>
-                  </div>
-                  <div class="progress-step">
-                    <span class="step-number"
-                      ><i class="fa-solid fa-check"></i> <b>4</b></span
-                    >
-                    <div class="step-label">Reference</div>
-                  </div>
-                  <div class="progress-step">
-                    <span class="step-number"
-                      ><i class="fa-solid fa-check"></i> <b>5</b></span
-                    >
-                    <div class="step-label">Bank Details</div>
-                  </div>
-                  <div class="progress-step">
-                    <span class="step-number"
-                      ><i class="fa-solid fa-check"></i> <b>6</b></span
-                    >
-                    <div class="step-label">Document Checklist</div>
-                  </div>
-                  <div class="progress-step">
-                    <span class="step-number"
-                      ><i class="fa-solid fa-check"></i> <b>7</b></span
-                    >
-                    <div class="step-label">Special Consideration</div>
-                  </div>
-                  <div class="progress-step">
-                    <span class="step-number"
-                      ><i class="fa-solid fa-check"></i> <b> 8</b></span
-                    >
-                    <div class="step-label">Community Involvement</div>
+              <div class="welcome-banner mt-4">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="welcome-text">
+                      <h6 class="d-flex align-items-center g-10">
+                        Hello <img src="bg/icon-1.png" alt="icon" />
+                      </h6>
+                      <h2>James</h2>
+                      <p>
+                        The Brighter Prospects scholarship programme is bp
+                        Trinidad and Tobago’s signature educational initiative
+                        in the Mayaro community.
+                      </p>
+                    </div>
+                    <a href="#" class="btn mt-4 btn-primary">Apply Now</a>
                   </div>
                 </div>
-                <div class="card-header border-0">
-                  <h5>Biographical Information</h5>
-                  <div class="card-tools">
-                    <a role="button" data-action="collapse" class="me-2"
-                      ><i class="fas fa-minus"></i
-                    ></a>
-                    <a role="button" data-action="close" class="ms-2"
-                      ><i class="fas fa-times"></i
-                    ></a>
-                  </div>
-                </div>
-                <div class="card-content collapse show">
-                  <div class="card-body">
-                    <form
-                      action="backend/users"
-                      role="form"
-                      method="post"
-                      enctype=""
-                    >
-                      <input
-                        type="hidden"
-                        name="_token"
-                        value="IXYO9Lh7MCSQyiqODAJI8ae6TISe5MvMq5glXbuB"
-                        autocomplete="off"
-                      />
+              </div>
+            </div>
+            <!-- end welcome banner  -->
+            <div class="col-md-12">
+              <h4 class="page-title text-black mb-3 mt-4">Your History</h4>
 
-                      <div class="row">
-                        <div class="form-group col-md-6">
-                          <label class="form-label" for=""
-                            >Institution attending to be attended:
-                          </label>
-                          <select
-                            class="form-select"
-                            aria-label="Default select example"
+              <div class="card card-secondary p-3">
+                <div class="table-responsive-lg">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Edit</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Mr Richard</td>
+                        <td>example@gmail.com</td>
+                        <td>12-12-2025</td>
+                        <td>
+                          <span class="sm-badge sm-badge-success"
+                            >Approved</span
                           >
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label class="form-label" for=""
-                            >Applicant is proceeding to (Current Year)
-                          </label>
-                          <select
-                            class="form-select"
-                            aria-label="Default select example"
-                          >
-                            <option value="1">2025</option>
-                            <option value="2">2024</option>
-                            <option value="3">2023</option>
-                          </select>
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for="duration"
-                            >Duration of Course (Years)
-                          </label>
-                          <input
-                            id="duration"
-                            name=""
-                            value=""
-                            type="number"
-                            class="form-control"
-                            required=""
-                            placeholder="Insert Here"
-                          />
-                        </div>
-
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for="date"
-                            >Study Start Date
-                          </label>
-                          <input
-                            id="date"
-                            name=""
-                            value=""
-                            type="date"
-                            class="form-control"
-                            required=""
-                            placeholder="Search here"
-                          />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for=""
-                            >Expected Year of Graduation
-                          </label>
-                          <select
-                            class="form-select"
-                            aria-label="Default select example"
-                          >
-                            <option value="1">2025</option>
-                            <option value="2">2024</option>
-                            <option value="3">2023</option>
-                          </select>
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for=""
-                            >Current Academic Year
-                          </label>
-                          <select
-                            class="form-select"
-                            aria-label="Default select example"
-                          >
-                            <option value="1">2025</option>
-                            <option value="2">2024</option>
-                            <option value="3">2023</option>
-                          </select>
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for=""
-                            >Current Semester
-                          </label>
-                          <select
-                            class="form-select"
-                            aria-label="Default select example"
-                          >
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                          </select>
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label class="form-label" for=""
-                            >Registration Status
-                          </label>
-                          <select
-                            class="form-select"
-                            aria-label="Default select example"
-                          >
-                            <option value="1">Success</option>
-                            <option value="2">Pending</option>
-                            <option value="3">Accepted</option>
-                          </select>
-                        </div>
-
-                        <div class="form-group col-md-6">
-                          <label class="form-label" for="Programme"
-                            >Programme Of Study
-                          </label>
-                          <input
-                            id="Programme"
-                            name=""
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Search here"
-                          />
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label class="form-label" for="Faculty"
-                            >Faculty
-                          </label>
-                          <input
-                            id="Faculty"
-                            name=""
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Search here"
-                          />
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label class="form-label" for="Award"
-                            >Current Award (if any)
-                          </label>
-                          <input
-                            id="Award"
-                            name=""
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Search here"
-                          />
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label class="form-label" for="Annual_Award"
-                            >Annual Value of Award (TT$)
-                          </label>
-                          <input
-                            id="Annual_Award"
-                            name=""
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Search here"
-                          />
-                        </div>
-                      </div>
-                      <div class="card-header border-0 ps-0">
-                        <h5>Other Financial Assistance (if any)</h5>
-                        <div class="card-tools">
-                          <a role="button" data-action="collapse" class="me-2"
-                            ><i class="fas fa-minus"></i
-                          ></a>
-                          <a role="button" data-action="close" class="ms-2"
-                            ><i class="fas fa-times"></i
-                          ></a>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="form-group col-md-6">
-                          <label class="form-label" for="loan_value"
-                            >Loan Value (TT$)
-                          </label>
-                          <input
-                            id="loan_value"
-                            name=""
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Loan Value (TT$)"
-                          />
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label class="form-label" for="grant_value"
-                            >Grant Values (TT$)
-                          </label>
-                          <input
-                            id="grant_value"
-                            name=""
-                            value=""
-                            type="text"
-                            class="form-control"
-                            required=""
-                            placeholder="Grant Values (TT$)"
-                          />
-                        </div>
-                        <div class="form-group col-md-12">
-                          <label class="form-label" for=""
-                            >In your words, please describe your professional
-                            aspirations and the importance of the scholarship to
-                            you
-                          </label>
-                          <textarea
-                            name=""
-                            id=""
-                            rows="4"
-                            class="form-control"
-                          ></textarea>
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label class="form-label" for="file"
-                            >Upload Document (Only PDF, DOC, DOCX, PNG & JPEG
-                            Accepted And Size < 3MB)
-                          </label>
-                          <input
-                            class="form-control"
-                            type="file"
-                            accept="image/png"
-                            id=""
-                          />
-                        </div>
-                      </div>
-
-                      <div
-                        class="d-flex align-items-center g-10 mt-3 justify-content-end"
-                      >
-                        <button
-                          type="submit"
-                          class="btn font-weight-bold btn-primary"
-                        >
-                          Save
-                        </button>
-                        <a
-                          href="reference.html"
-                          class="btn font-weight-bold btn-primary"
-                          >Save & Proceed Next</a
-                        >
-                      </div>
-                    </form>
-                  </div>
+                        </td>
+                        <td><a class="view-link">View</a></td>
+                      </tr>
+                      <tr>
+                        <td>Mr Richard</td>
+                        <td>example@gmail.com</td>
+                        <td>$582,842.35</td>
+                        <td>
+                          <span class="sm-badge sm-badge-reject">Reject</span>
+                        </td>
+                        <td><a class="view-link">View</a></td>
+                      </tr>
+                      <tr>
+                        <td>Mr Richard</td>
+                        <td>example@gmail.com</td>
+                        <td>$582,842.35</td>
+                        <td>
+                          <span class="sm-badge sm-badge-reject">Reject</span>
+                        </td>
+                        <td><a class="view-link">View</a></td>
+                      </tr>
+                      <tr>
+                        <td>Mr Richard</td>
+                        <td>example@gmail.com</td>
+                        <td>$582,842.35</td>
+                        <td>
+                          <span class="sm-badge sm-badge-reject">Reject</span>
+                        </td>
+                        <td><a class="view-link">View</a></td>
+                      </tr>
+                      <tr>
+                        <td>Mr Richard</td>
+                        <td>example@gmail.com</td>
+                        <td>$582,842.35</td>
+                        <td>
+                          <span class="sm-badge sm-badge-success">Custom</span>
+                        </td>
+                        <td><a class="view-link">View</a></td>
+                      </tr>
+                      <tr>
+                        <td>Mr Richard</td>
+                        <td>example@gmail.com</td>
+                        <td>$582,842.35</td>
+                        <td>
+                          <span class="sm-badge sm-badge-reject">Reject</span>
+                        </td>
+                        <td><a class="view-link">View</a></td>
+                      </tr>
+                      <tr>
+                        <td>Mr Richard</td>
+                        <td>example@gmail.com</td>
+                        <td>$582,842.35</td>
+                        <td>
+                          <span class="sm-badge sm-badge-success">Custom</span>
+                        </td>
+                        <td><a class="view-link">View</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
